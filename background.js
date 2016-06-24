@@ -1,7 +1,9 @@
 // Send a message to the current tab's content script.
 function toggleToolbar() {
-  chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
-    chrome.tabs.sendMessage(tabs[0].id, "toggle-in-page-toolbar");
+  chrome.tabs.query({ currentWindow: true }, function(tabs) {
+    for (var i = 0; i < tabs.length; i++) {
+    	chrome.tabs.sendMessage(tabs[i].id, "toggle-in-page-toolbar");
+    }
   });
 }
 
