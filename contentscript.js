@@ -3,7 +3,7 @@ var toolbarUI;
 // Create the toolbar ui iframe and inject it in the current page
 function initToolbar() {
   var iframe = document.createElement("iframe");
-  iframe.setAttribute("src", "https://www.youtube.com/embed/LHCob76kigA");
+  iframe.setAttribute("src", "https://www.youtube.com/embed/AJ-7X6cvOhY");
   iframe.setAttribute("style", "position: fixed; top: 0; right: 0; z-index: 10000; width: 560px; height: 315px;");
   iframe.setAttribute("width","560");
   iframe.setAttribute("height","315");
